@@ -1,0 +1,119 @@
+.culture{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* margin-top: 10px; */
+  }
+  .culturecontainer {
+    width: 1300px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+ /* banner section start */
+ .festival-banner {
+  position: relative;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('../assets/festival-banner.png');
+  z-index: -10;
+  margin-top: 10px;
+}
+/* banner section end */
+.festival-text{
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 170px;
+}
+  .ccard {
+    position: relative;
+    width: calc(50% - 20px);
+    min-height: 300px;
+    background: #fff;
+    margin: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 3px solid #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+  .ccard .imgBx {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+  .ccard .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  .ccard .details {
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5FA8D3;
+  }
+  .ccard .details .content {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .ccard .details .content h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 0.85em;
+    font-weight: 600;
+  }
+  .ccard .details .content h2 span {
+    font-size: 14px;
+    color: #777;
+  }
+
+  @media (max-width: 1200px) {
+    .culturecontainer {
+      width: 100%;
+    }
+  }
+  @media (max-width: 991px) {
+    .ccard {
+      width: calc(70% - 20px);
+      margin: 10px auto;
+    }
+  }
+  @media (max-width: 768px) {
+    .ccard {
+      width: calc(70% - 20px);
+      margin: 10px auto;
+    }
+    .ccard .imgBx {
+      position: relative;
+      width: 100%;
+      height: 200px;
+    }
+    .ccard .details {
+      position: relative;
+      width: 100%;
+      height: 200px;
+    }
+  }
+  @media (max-width: 480px) {
+    .ccard {
+      width: calc(100% - 40px);
+      margin: 10px auto;
+    }
+  }
+  

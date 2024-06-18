@@ -1,0 +1,44 @@
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+  }
+  #social-icon{
+    display: flex;
+    gap: 10px;
+  }
+  .icons{
+    color: #006E7F;
+    font-size: 25px;
+  }
+  .icons:hover{
+    color: #EE5007;
+    cursor: pointer;
+  }
+  .header-links {
+    display: flex;
+    gap: 5px;
+  }
+  .header-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  #signin-btn{
+    text-decoration: none;
+    background-color: #B22727;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    padding: 6px;
+    margin-right: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  #signin-btn:hover{
+    cursor: pointer;
+    background-color: #F8CB2E;
+    color: #000;
+  }
+  

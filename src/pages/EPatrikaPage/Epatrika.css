@@ -1,0 +1,146 @@
+/* Common styles for all devices */
+.container {
+  max-width: 1200px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+img.utkal_logo{
+  height: 231px!important;
+}
+
+.header img {
+  height: auto;
+  margin: 0 auto;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.e-head{
+  margin-right: 278px;
+}
+.cta {
+  text-align: center;
+  background-color: #F8CB2E;
+  padding: 15px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #000;
+}
+/* Your existing styles... */
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+}
+.buttonn {
+  padding: 15px 15px;
+  background-color: #B22727;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-right: 30px; 
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.buttonn:hover{
+  background-color: #F8CB2E;
+  color: #000;
+}
+.modal {
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  z-index: 1000;
+}
+.modal-input{
+  color: #fff;
+}
+.buttonn{
+  color: #fff;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #B22727;
+  padding-bottom: 10px;
+}
+
+.modal-body {
+  padding: 10px 0;
+  /* color: #000; */
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #B22727;
+  z-index: 999;
+}
+.pdf-container {
+  text-align: center;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header img {
+    margin-bottom: 16px;
+  }
+
+  .buttonn-container {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 5px;
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+    width: 270px;
+  }
+
+  .buttonn {
+    width: 100%;
+    float: none;
+  }
+
+  .cta {
+    width: 120%;  
+  }
+
+  .modal {
+    width: 90%;
+  }
+
+  .e-head {
+    margin-right: 0px;
+    align-items: center;
+  }
+}
